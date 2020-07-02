@@ -1,0 +1,13 @@
+server:
+  port: 8089
+
+spring:
+  profiles: test
+  application:
+    name: config-server-test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
