@@ -1,0 +1,13 @@
+server:
+  port: 8088
+
+spring:
+  profiles: pro
+  application:
+    name: config-server-pro
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pro?useSSL=false
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
